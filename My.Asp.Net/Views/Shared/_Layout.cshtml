@@ -6,21 +6,23 @@
     @await Html.PartialAsync("CssPartial")
 </head>
 <body class="is-preload">
+    
     <div id="wrapper">
+
+
         @await Html.PartialAsync("HeaderPartial")
 
-        @await Html.PartialAsync("MenuPartial")
+        @*@await Html.PartialAsync("MenuPartial")
 
         @await Html.PartialAsync("MainPartial")
 
-        <div class="col-8 col-12-medium">
-            @RenderBody()
-        </div>
-        @await Html.PartialAsync("SidebarPartial")
 
+        @await Html.PartialAsync("SidebarPartial")*@
+        @RenderBody()
     </div>
 
 
     @await Html.PartialAsync("ScriptPartial")
+
 </body>
 </html>

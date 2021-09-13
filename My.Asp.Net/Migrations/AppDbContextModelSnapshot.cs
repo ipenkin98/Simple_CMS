@@ -49,7 +49,7 @@ namespace My.Asp.Net.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "f4d4638b-8dc5-4965-8333-91740a574279",
+                            ConcurrencyStamp = "1836bf4b-fac7-4f48-bab0-bd5e0a45e128",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +148,13 @@ namespace My.Asp.Net.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a586b5d3-b48a-4713-9d90-906a8ec63d0b",
+                            ConcurrencyStamp = "2b8aa2b9-23f0-4e73-880b-e5e280dba31d",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEB00BBvPOmC26oMOczV3N6XiHFFd+q+784LuGrtwuHwfarozztImsMv9BI3yZo6ocA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJ5DVPicYDz4U23Q918GjTrI+Wtm5yI5Wb6K97oZ9gcfC4tQCaIBlr5/USLepIukGg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -261,6 +261,9 @@ namespace My.Asp.Net.Migrations
                     b.Property<string>("MetaDescription")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MetaKeywords")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
 
@@ -298,6 +301,9 @@ namespace My.Asp.Net.Migrations
                     b.Property<string>("MetaDescription")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MetaKeywords")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
 
@@ -322,24 +328,24 @@ namespace My.Asp.Net.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 9, 7, 18, 29, 32, 52, DateTimeKind.Utc).AddTicks(8128),
-                            Text = "Text is filled in by the admin ",
+                            DateAdded = new DateTime(2021, 9, 12, 15, 5, 40, 250, DateTimeKind.Utc).AddTicks(1420),
+                            Text = "Содержание заполняется администратором",
                             Title = "Главная"
                         },
                         new
                         {
                             Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                             CodeWord = "PageServices",
-                            DateAdded = new DateTime(2021, 9, 7, 18, 29, 32, 52, DateTimeKind.Utc).AddTicks(9583),
-                            Text = "Text is filled in by the admin ",
+                            DateAdded = new DateTime(2021, 9, 12, 15, 5, 40, 250, DateTimeKind.Utc).AddTicks(2916),
+                            Text = "Содержание заполняется администратором",
                             Title = "Наши услуги"
                         },
                         new
                         {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 9, 7, 18, 29, 32, 52, DateTimeKind.Utc).AddTicks(9613),
-                            Text = "Text is filled in by the admin ",
+                            DateAdded = new DateTime(2021, 9, 12, 15, 5, 40, 250, DateTimeKind.Utc).AddTicks(2949),
+                            Text = "Содержание заполняется администратором",
                             Title = "Контакты"
                         });
                 });

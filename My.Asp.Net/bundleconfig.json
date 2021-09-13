@@ -1,10 +1,4 @@
-[
-  {
-    "outputFileName": "wwwroot/css/main.min.css",
-    "inputFiles": [
-      "wwwroot/scss/main.scss"
-    ]
-  },
+
   {
     "outputFileName": "wwwroot/js/scripts.js",
     "inputFiles": [
