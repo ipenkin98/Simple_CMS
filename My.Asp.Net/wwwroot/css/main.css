@@ -2548,3 +2548,6 @@ body.is-menu-visible #menu {
   display: block;
   max-width: 100%;
   margin: 0 auto; }
+
+.big-image-list img {
+  width: 178px; }

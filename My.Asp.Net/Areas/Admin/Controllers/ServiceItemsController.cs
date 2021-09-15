@@ -3,12 +3,11 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using My.Asp.Net.Areas.Admin.Controllers;
 using My.Asp.Net.Domain;
 using My.Asp.Net.Domain.Entities;
 using My.Asp.Net.Service;
 
-namespace MyCompany.Areas.Admin.Controllers
+namespace My.Asp.Net.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ServiceItemsController : Controller

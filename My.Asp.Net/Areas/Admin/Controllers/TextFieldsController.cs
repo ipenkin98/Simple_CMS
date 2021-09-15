@@ -3,14 +3,13 @@ using My.Asp.Net.Domain;
 using My.Asp.Net.Domain.Entities;
 using My.Asp.Net.Service;
 
-
 namespace My.Asp.Net.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class TextFieldsController : Controller
     {
         private readonly DataManager dataManager;
-        public TextFieldsController(DataManager dataManager) 
+        public TextFieldsController(DataManager dataManager)
         {
             this.dataManager = dataManager;
         }
@@ -24,7 +23,7 @@ namespace My.Asp.Net.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Edit(TextField model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 dataManager.TextFields.SaveTextField(model);
                 return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());

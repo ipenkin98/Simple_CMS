@@ -18,6 +18,11 @@
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
+    <None Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="Areas\Admin\Views\ServiceItems\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\TextFields\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
