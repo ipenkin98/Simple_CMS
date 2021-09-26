@@ -1,0 +1,23 @@
+﻿@model IQueryable<ServiceItem>
+
+@if (Model?.Any() == true)
+{
+
+    <article class="mini-post">
+        @foreach (ServiceItem entity in Model)
+        {<header>
+                <h3>
+                    @entity.Title
+                </h3>
+                <time class="published">
+                    @entity.Subtitle
+                </time>
+                <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+            </header>
+            <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id" class="image">
+                <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+            </a>
+        }
+    </article>
+
+}

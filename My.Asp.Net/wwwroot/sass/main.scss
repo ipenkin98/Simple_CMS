@@ -2350,7 +2350,7 @@ ol li {
 	padding-left: 0.25em;
 }
 
-ul {
+/*ul {
 	list-style: disc;
 	margin: 0 0 2em 0;
 	padding-left: 1em;
@@ -2373,7 +2373,7 @@ ul.alt li {
 ul.alt li:first-child {
 	border-top: 0;
 	padding-top: 0;
-}
+}*/
 
 dl {
 	margin: 0 0 2em 0;
@@ -2621,6 +2621,7 @@ ul.posts article header > :last-child {
 	background: #ffffff;
 	border: solid 1px rgba(160, 160, 160, 0.3);
 	margin: 0 0 2em 0;
+
 }
 
 .mini-post .image {
@@ -3355,9 +3356,9 @@ body.single #wrapper {
 /* Sidebar */
 
 #sidebar {
-	margin-right: 3em;
+	margin-right: -4em;
 	min-width: 22em;
-	width: 22em;
+	width: 20em;
 }
 
 #sidebar > * {
@@ -3602,7 +3603,8 @@ body.is-menu-visible #menu {
 }
 
 .big-image-list {
-		img {
-		     width: 178px;
-		}
+	img {
+		overflow: hidden;
+		width: 178px;
+	}
 }

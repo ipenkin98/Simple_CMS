@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewComponents\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="bundleconfig.json" />
     <None Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="Areas\Admin\Views\ServiceItems\Edit.cshtml" />
